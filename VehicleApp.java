@@ -1,3 +1,12 @@
+/****************************************************************************
+ *
+ * Created by: James Lee
+ * Created on: Mar 2019
+ * Created for: ICS4U
+ * This program uses the vehicle class and makes two vehicles
+ *
+ ****************************************************************************/
+
 import java.util.Scanner;
 
 public class VehicleApp
@@ -7,6 +16,7 @@ public class VehicleApp
         Scanner userInput = new Scanner(System.in);
         Vehicle garage[] = new Vehicle[2];
 
+        // Makes two vehicles
         for (int i = 0; i < 2; i++)
         {
             String licensePlate;
@@ -14,12 +24,14 @@ public class VehicleApp
             int doors = 0;
             boolean isValidInput = false;
 
+            // Asks for plate and color
             System.out.print("What is the license plate? : ");
             licensePlate = userInput.nextLine();
 
             System.out.print("What is its color? : ");
             color = userInput.nextLine();
 
+            // Asks for number of doors
             while (isValidInput == false)
             {
                 System.out.print("How many doors does it have? : ");
@@ -41,9 +53,12 @@ public class VehicleApp
                     System.out.print("\nError : Invalid input!\n");
                 }
             }
+
+            // Creates car and puts in garage
             Vehicle car = new Vehicle(licensePlate, color, doors);
             garage[i] = car;
 
+            // Asks to accelerate or brake
             while (true)
             {
                 System.out.print("\n" + garage[i].toString());
@@ -72,6 +87,8 @@ public class VehicleApp
             System.out.print("\n" + garage[i].toString() + "\n");
         }
         System.out.print("\nThere are " + garage.length + " cars in the garage. \n");
+
+        // Allows user to view cars in garage
         while (true)
         {
             System.out.print("\nView a car (1,2) or exit : ");
