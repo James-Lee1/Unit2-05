@@ -101,7 +101,7 @@ public class VehicleApp
             }
             else if (userChoice.equals("2"))
             {
-                System.out.print("\nThe first car in the garage has these properties \n" + garage[1].toString());
+                System.out.print("\nThe second car in the garage has these properties \n" + garage[1].toString());
             }
             else if (userChoice.equals("exit"))
             {
