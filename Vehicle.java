@@ -1,19 +1,32 @@
-
+/****************************************************************************
+ *
+ * Created by: James Lee
+ * Created on: Mar 2019
+ * Created for: ICS4U
+ * This is the class vehicle, which accepts a license plate, color and
+ * number of doors
+ *
+ ****************************************************************************/
 
 class Vehicle
 {
+
+    // Vehicle properties
     private String licensePlate;
     private String color;
     private int numOfDoors;
     private int speed = 60;
     private final int maxSpeed = 200;
 
+    // Constructor
     public Vehicle(String licensePlate, String color, int numOfDoors)
     {
         this.licensePlate = licensePlate;
         this.color = color;
         this.numOfDoors = numOfDoors;
     }
+
+    // When car is accelerating
     protected String accelerate()
     {
         String Accel = "Accelerating!!!!!!";
@@ -28,6 +41,7 @@ class Vehicle
         return Accel;
     }
 
+    // When car is braking
     protected String brake()
     {
         String Brake = "Braking";
@@ -42,6 +56,8 @@ class Vehicle
         }
         return Brake;
     }
+
+    // Converts car into string
     public String toString()
     {
         String vehicle = "License plate is " + licensePlate + "\n"
