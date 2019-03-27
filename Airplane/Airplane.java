@@ -10,7 +10,7 @@
 class Airplane
 {
     // Airplane properties
-    private int speed = 60;
+    private int speed = 0;
 
     // Constructor
     public Airplane(int speed)
@@ -19,18 +19,15 @@ class Airplane
     }
 
     // Set airplane speed
-    protected String setSpeed(int _speed)
+    protected void setSpeed(int _speed)
     {
-        String update;
         this.speed = _speed;
-        update = "Speed is " + speed;
-        return update;
     }
 
     // Get plane speed
-    protected String getSpeed()
+    protected int getSpeed()
     {
-        String update = "Speed is " + speed;
+        int update = speed;
         return update;
     }
 }
