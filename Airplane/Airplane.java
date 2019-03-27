@@ -27,7 +27,6 @@ class Airplane
     // Get plane speed
     protected int getSpeed()
     {
-        int update = speed;
-        return update;
+        return speed;
     }
 }
