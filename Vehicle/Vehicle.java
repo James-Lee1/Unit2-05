@@ -3,7 +3,7 @@
  * Created by: James Lee
  * Created on: Mar 2019
  * Created for: ICS4U
- * This is the class vehicle, which accepts a license plate, color and
+ * This is the class vehicle which accepts a license plate, color and
  * number of doors
  *
  ****************************************************************************/
