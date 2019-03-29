@@ -3,7 +3,7 @@
  * Created by: James Lee
  * Created on: Mar 2019
  * Created for: ICS4U
- * This program uses the vehicle class and makes two vehicles
+ * This program uses thevehicle class and makes two vehicles
  *
  ****************************************************************************/
 
